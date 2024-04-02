@@ -34,7 +34,7 @@ public class Game extends JFrame{
 		
 		// To Create a Window
 		setSize(640, 640);
-		setVisible(true);
+		
 		
 			// To stop the program on window close
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -45,6 +45,9 @@ public class Game extends JFrame{
 		// To add object
 		setGameScreen(new GameScreen(getImg()));
 		add(gameScreen);
+		
+		// Set Visible should be at the end
+		setVisible(true);
 	}
 
 	private void importImg() {
